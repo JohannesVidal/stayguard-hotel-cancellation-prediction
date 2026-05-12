@@ -88,6 +88,16 @@ The objective is to predict whether a booking belongs to the `Canceled` class.
     ├── requirements.txt
     └── .gitignore
 
+## Source Code
+
+The `src/` folder contains reusable Python functions used to keep the project more organized and modular.
+
+- `data_cleaning.py`: functions for column standardization, dataset overview, target summary, sanity checks, and saving cleaned data.
+- `feature_engineering.py`: functions for target encoding, feature-target splitting, feature type identification, and EDA grouping variables.
+- `modeling.py`: functions for model evaluation, classification reports, confusion matrices, and model comparison.
+
+Although the main workflow is shown in the notebooks, these scripts support cleaner and more reusable project structure.
+
 ## Workflow
 
 ### 1. Data Loading and Initial Inspection
