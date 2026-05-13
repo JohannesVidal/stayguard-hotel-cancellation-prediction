@@ -110,6 +110,7 @@ The dataset was loaded and inspected for:
 - Target distribution.
 - Categorical feature consistency.
 - Potentially unusual numerical values.
+- Both bagging-based and boosting-based ensemble approaches were tested through Random Forest and Gradient Boosting.
 
 The dataset contained:
 
@@ -159,10 +160,11 @@ Several classification models were trained and compared:
 
 - K-Nearest Neighbors baseline.
 - Tuned K-Nearest Neighbors.
-- Logistic Regression.
+- Logistic Regression baseline.
 - Decision Tree baseline.
 - Tuned Decision Tree.
-- Random Forest.
+- Random Forest ensemble.
+- Gradient Boosting ensemble.
 
 The dataset was split into training and testing sets using stratification to preserve the original target distribution.
 
@@ -177,13 +179,14 @@ Because the target variable was moderately imbalanced, model selection focused m
 | KNN Tuned | 0.8816 | 0.8401 | 0.7888 | 0.8136 |
 | Decision Tree Baseline | 0.8744 | 0.8109 | 0.8044 | 0.8076 |
 | KNN Baseline | 0.8567 | 0.7996 | 0.7505 | 0.7743 |
+| Gradient Boosting Ensemble | 0.8584 | 0.8296 | 0.7148 | 0.7679 |
 | Logistic Regression Baseline | 0.8143 | 0.7537 | 0.6437 | 0.6943 |
 
 ## Best Model
 
 The best-performing model was:
 
-**Random Forest Classifier — Ensemble Model**
+**Random Forest Ensemble**
 
 Final test performance:
 
@@ -214,7 +217,7 @@ The strongest predictor was `lead_time`, confirming the EDA finding that booking
 - Lead time is the strongest driver of cancellation risk.
 - Guests with more special requests are less likely to cancel.
 - Online bookings show higher cancellation rates than corporate bookings.
-- Random Forest outperformed simpler models by capturing non-linear relationships between booking features and cancellation behavior.
+- Random Forest outperformed both simpler models and the Gradient Boosting ensemble by better balancing precision and recall for cancellation detection.
 - Accuracy alone was not enough to evaluate the models because the target variable was moderately imbalanced.
 
 ## Business Impact
@@ -234,7 +237,7 @@ Potential applications include:
 Future versions of this project could include:
 
 - Threshold optimization to adjust the balance between precision and recall.
-- Additional ensemble models such as Gradient Boosting or XGBoost.
+- Additional advanced ensemble models such as XGBoost, LightGBM, or CatBoost.
 - External data such as local events, holidays, weather, or seasonality.
 - Model explainability using SHAP values.
 - Validation on more recent hotel booking data.
