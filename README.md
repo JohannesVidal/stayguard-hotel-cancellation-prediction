@@ -172,7 +172,7 @@ Because the target variable was moderately imbalanced, model selection focused m
 
 | Model | Accuracy | Precision | Recall | F1-score |
 |---|---:|---:|---:|---:|
-| Random Forest Baseline | 0.9068 | 0.8882 | 0.8187 | 0.8520 |
+| Random Forest Ensemble | 0.9068 | 0.8882 | 0.8187 | 0.8520 |
 | Decision Tree Tuned | 0.8841 | 0.8328 | 0.8086 | 0.8205 |
 | KNN Tuned | 0.8816 | 0.8401 | 0.7888 | 0.8136 |
 | Decision Tree Baseline | 0.8744 | 0.8109 | 0.8044 | 0.8076 |
@@ -183,7 +183,7 @@ Because the target variable was moderately imbalanced, model selection focused m
 
 The best-performing model was:
 
-**Random Forest Classifier**
+**Random Forest Classifier — Ensemble Model**
 
 Final test performance:
 
@@ -192,7 +192,7 @@ Final test performance:
 - Recall: **81.87%**
 - F1-score: **85.20%**
 
-Random Forest achieved the best balance between detecting actual cancellations and avoiding excessive false cancellation predictions.
+The Random Forest ensemble achieved the best balance between detecting actual cancellations and avoiding excessive false cancellation predictions.
 
 ## Feature Importance
 
