@@ -77,6 +77,9 @@ The objective is to predict whether a booking belongs to the `Canceled` class.
     │
     ├── reports/
     │   └── figures/
+    │   └── presentation/
+    │       └── StayGuard Hotel Cancellation Prediction.pdf        
+    │       └── StayGuard Hotel Cancellation Prediction.ppt
     │
     ├── src/
     │   ├── __init__.py
@@ -87,6 +90,13 @@ The objective is to predict whether a booking belongs to the `Canceled` class.
     ├── README.md
     ├── requirements.txt
     └── .gitignore
+
+## Presentation
+
+The final project presentation is available in:
+
+`reports/presentation/StayGuard_Hotel_Cancellation_Prediction.pdf`
+`reports/presentation/StayGuard_Hotel_Cancellation_Prediction.ppt`
 
 ## Source Code
 
